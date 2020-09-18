@@ -49,6 +49,15 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 お使いのマシンを**再起動**して WSL のインストールを完了し、WSL 2 に更新します。
 
+### <a name="download-linux-kernel-update-package"></a>"Linux カーネル更新パッケージをダウンロードする
+1. 最新のパッケージをダウンロードする:
+    - [x64 マシン用の WSL2 Linux カーネル更新パッケージ](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+
+    > [!NOTE]
+    > ARM64 マシンを用いている場合は、代わりに [ARM64 パッケージ](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi) をダウンロードしてください。どの種類のマシンか不明な場合は、コマンドプロンプトか PowerShell を開いて 次のように入力してください: `systeminfo | find "System Type"`。
+
+2. 前のステップでダウンロードした更新パッケージを実行する (ダブルクリックで実行 - 権限の昇格が求められるので、「はい」を選択してインストールを承認してください)。
+
 ### <a name="set-wsl-2-as-your-default-version"></a>WSL 2 を既定のバージョンとして設定する
 
 管理者として PowerShell を開いて次のコマンドを実行し、新しい Linux ディストリビューションをインストールする際の既定のバージョンとして WSL 2 を設定します。
