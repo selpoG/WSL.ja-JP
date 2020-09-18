@@ -49,7 +49,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 お使いのマシンを**再起動**して WSL のインストールを完了し、WSL 2 に更新します。
 
-### <a name="download-linux-kernel-update-package"></a>"Linux カーネル 更新プログラム パッケージをダウンロードする
+### <a name="download-linux-kernel-update-package"></a>Linux カーネル 更新プログラム パッケージをダウンロードする
 1. 最新のパッケージをダウンロードする:
     - [x64 マシン用の WSL2 Linux カーネル 更新プログラム パッケージ](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
